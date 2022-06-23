@@ -1,25 +1,14 @@
 import { AppBar, Button, TextField, Toolbar, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import Header from "./header";
 import Textarea from "./textarea";
 
 function layout() {
   return (
     <>
       {/* header */}
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h3" sx={{ ml: 10 }}>
-            PDCA-APP
-          </Typography>
-          <Typography variant="h5" sx={{ ml: 15 }}>
-            TODOリスト
-          </Typography>
-          <Typography variant="h5" sx={{ ml: 15 }}>
-            達成率（仮）
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Header />
       {/* main目標・現状入力欄 */}
       <Typography variant="h5" sx={{ mt: 10, ml: 10 }}>
         🌟目標と現状を入力してください。
