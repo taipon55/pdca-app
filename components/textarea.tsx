@@ -4,14 +4,6 @@ import TextField from "@mui/material/TextField";
 import { Button, Grid } from "@mui/material";
 
 export default function MultilineTextFields() {
-  const [value, setValue] = React.useState("Controlled");
-  const [value2, setValue2] = React.useState("Controlled");
-  const [value3, setValue3] = React.useState("Controlled");
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
-  };
-
   return (
     <>
       <Box
@@ -25,27 +17,21 @@ export default function MultilineTextFields() {
         <div>
           <TextField
             id="outlined-multiline-flexible"
-            label="Multiline"
+            label="課題1のKPI"
             multiline
             maxRows={4}
-            value={value}
-            onChange={handleChange}
           />
           <TextField
             id="outlined-multiline-flexible"
-            label="Multiline"
+            label="課題2のKPI"
             multiline
             maxRows={4}
-            value={value2}
-            onChange={handleChange}
           />
           <TextField
             id="outlined-multiline-flexible"
-            label="Multiline"
+            label="課題3のKPI"
             multiline
             maxRows={4}
-            value={value3}
-            onChange={handleChange}
           />
         </div>
       </Box>
