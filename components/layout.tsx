@@ -70,6 +70,9 @@ function layout() {
       <Typography variant="h5" sx={{ mt: 10, ml: 10 }}>
         🌟課題を数値化してKPIを設定してください。（各課題１つずつ）
       </Typography>
+      <Typography variant="h6" gutterBottom component="div" sx={{ ml: 10 }}>
+        KPIは結果目標のこと
+      </Typography>
       <Textarea />
     </>
   );
