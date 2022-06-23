@@ -2,6 +2,7 @@ import { AppBar, Button, TextField, Toolbar, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import Header from "./header";
+import Kgi from "./kgi";
 import Textarea from "./textarea";
 
 function layout() {
@@ -9,27 +10,8 @@ function layout() {
     <>
       {/* header */}
       <Header />
-      {/* main目標・現状入力欄 */}
-      <Typography variant="h5" sx={{ mt: 10, ml: 10 }}>
-        🌟目標と現状を入力してください。
-      </Typography>
-      <Box sx={{ mt: 5 }}>
-        <TextField
-          id="standard-basic"
-          label="目標"
-          variant="standard"
-          sx={{ ml: 10 }}
-        />
-        <TextField
-          id="standard-basic"
-          label="現状"
-          variant="standard"
-          sx={{ ml: 10 }}
-        />
-        <Button variant="contained" sx={{ mt: 1, ml: 5 }}>
-          追加
-        </Button>
-      </Box>
+      {/* kgi目標・現状入力欄 */}
+      <Kgi />
       <Typography variant="h5" sx={{ mt: 10, ml: 10 }}>
         🌟目標と現状のギャップを埋めための課題を３つ入力してください。
       </Typography>
