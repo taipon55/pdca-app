@@ -4,7 +4,7 @@ import React from "react";
 import Header from "./header";
 import Kgi from "./kgi";
 import Task from "./task";
-import Textarea from "./textarea";
+import Textarea from "./kpi";
 
 function Layout() {
   return (
