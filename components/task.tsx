@@ -1,7 +1,7 @@
 import { Typography, Box, TextField, Button } from "@mui/material";
 import React from "react";
 
-function task() {
+function Task() {
   return (
     <>
       <Typography variant="h5" sx={{ mt: 10, ml: 10 }}>
@@ -34,4 +34,4 @@ function task() {
   );
 }
 
-export default task;
+export default Task;

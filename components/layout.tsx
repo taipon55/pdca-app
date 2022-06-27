@@ -6,7 +6,7 @@ import Kgi from "./kgi";
 import Task from "./task";
 import Textarea from "./textarea";
 
-function layout() {
+function Layout() {
   return (
     <>
       {/* header */}
@@ -16,7 +16,7 @@ function layout() {
       {/* 課題入力欄 */}
       <Task />
       <Typography variant="h5" sx={{ mt: 10, ml: 10 }}>
-        🌟課題を数値化してKPIを設定してください。（各課題１つずつ）
+        🌟課題を数値化してKPIを設定してください。（各課題1つずつ）
       </Typography>
       <Typography variant="h6" gutterBottom component="div" sx={{ ml: 10 }}>
         KPIは結果目標のこと
@@ -26,4 +26,4 @@ function layout() {
   );
 }
 
-export default layout;
+export default Layout;
