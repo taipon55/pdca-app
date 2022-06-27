@@ -1,11 +1,17 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import { Button, Grid } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 
 export default function MultilineTextFields() {
   return (
     <>
+      <Typography variant="h5" sx={{ mt: 10, ml: 10 }}>
+        🌟課題を数値化してKPIを設定してください。（各課題1つずつ）
+      </Typography>
+      <Typography variant="h6" gutterBottom component="div" sx={{ ml: 10 }}>
+        KPIは結果目標のこと
+      </Typography>
       <Box
         component="form"
         sx={{

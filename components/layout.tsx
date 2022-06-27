@@ -4,7 +4,7 @@ import React from "react";
 import Header from "./header";
 import Kgi from "./kgi";
 import Task from "./task";
-import Textarea from "./kpi";
+import Kpi from "./kpi";
 
 function Layout() {
   return (
@@ -15,13 +15,8 @@ function Layout() {
       <Kgi />
       {/* 課題入力欄 */}
       <Task />
-      <Typography variant="h5" sx={{ mt: 10, ml: 10 }}>
-        🌟課題を数値化してKPIを設定してください。（各課題1つずつ）
-      </Typography>
-      <Typography variant="h6" gutterBottom component="div" sx={{ ml: 10 }}>
-        KPIは結果目標のこと
-      </Typography>
-      <Textarea />
+
+      <Kpi />
     </>
   );
 }
